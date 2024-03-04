@@ -1,3 +1,8 @@
+title: 'Vadim Titko'
+tagline: 'Blog'
+paginate: 5
+permalink: pretty
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
