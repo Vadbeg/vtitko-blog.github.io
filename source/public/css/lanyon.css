@@ -38,6 +38,7 @@
 html,
 body {
   overflow-x: hidden;
+  height: 100vh;
 }
 
 html {
@@ -63,6 +64,8 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   position: relative;
   width: 100%;
+  min-height: 100%;
+  padding-bottom: 2rem;
 }
 
 
@@ -94,9 +97,9 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  padding-top:    0rem;
+  padding-bottom: 0rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #eee;
 }
 .masthead-title {
@@ -126,6 +129,38 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Footer
+ */
+
+ .mastfoot {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  border-top: 1px solid #eee;
+}
+
+.mastfoot-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #505050;
+}
+
+.social-icons {
+  /* Add styling for social icons */
+}
+
+.social-icon {
+  display: inline-block; /* Ensure the element takes up only the necessary space */
+  padding: 0; /* Remove any default padding */
+  margin: 0.3rem; /* Remove any default margin */
+  font-size: 36px; /* Set the font size */
+  color: #505050; /* Set the color */
+  text-decoration: none!important;
+}
 
 /*
  * Navigation
@@ -140,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-nav a {
   color: #505050;
-  margin-right: 20px;
+  margin-left: 15px;
 }
 
 
