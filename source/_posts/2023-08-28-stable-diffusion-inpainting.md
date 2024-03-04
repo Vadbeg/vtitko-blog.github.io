@@ -30,8 +30,6 @@ This process is depicted in the diagram below. If you want to understand this pr
 
 ![**[High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) paper**](/public/images/posts/2023-08-28-stable-diffusion-inpainting/architecture.png)
 
-**[High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) paper**
-
 ## How To Make Inpainting Work
 
 There are several approaches to incorporate Stable Diffusion (SD) for inpainting tasks. One such method is to fine-tune the original SD model. RunwayML has implemented this approach, making [runwayml/stable-diffusion-inpainting](https://huggingface.co/runwayml/stable-diffusion-inpainting) checkpoint:
@@ -111,8 +109,6 @@ This algorithm works and can give decent results. However, it performs poorly wh
 To remove an object from the image, let's provide an empty prompt to the model. With an empty prompt, the model will attempt to make the masked area as consistent with the rest of the image as possible.
 
 ![Comparison of simple and specifically trained pipelines](/public/images/posts/2023-08-28-stable-diffusion-inpainting/test_inpainting_compare.png)
-
-Comparison of simple and specifically trained pipelines
 
 So, we can see that our algorithm failed, but SD inpainting performed quite well. Additionally, a model specifically fine-tuned on the inpainting task will be able to produce better and more consistent results for text-guided image inpainting.
 
