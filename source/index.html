@@ -1,7 +1,22 @@
 ---
 layout: default
-title: "Home Coming"
+title: Home
 ---
 
-<h1>Hello World!</h1>
 
+<div class="posts">
+  WTF
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
