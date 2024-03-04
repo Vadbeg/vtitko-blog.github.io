@@ -384,6 +384,16 @@ a.sidebar-nav-item:focus {
   margin-top: 0.0em;
 }
 
+.post-thumbnail-title {
+  color: #303030;
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.post-thumbnail-title a {
+  color: #303030;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
