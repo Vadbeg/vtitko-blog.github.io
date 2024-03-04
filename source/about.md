@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+number: 1  # Add this line to set the order of the page in the navigation (from right to left)
 ---
 
 <p class="message">
