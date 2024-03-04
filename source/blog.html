@@ -10,7 +10,7 @@ number: 2  # Add this line to set the order of the page in the navigation (from 
     <div class="post-thumbnail">
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <h1 class="post-title">
-        <a href="{{ post.url | absolute_url }}">
+        <a href="{{ post.url | relative_url }}">
           {{ post.title }}
         </a>
     </h1>
