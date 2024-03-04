@@ -162,6 +162,22 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none!important;
 }
 
+.social-icons img {
+  vertical-align: middle; /* Align all <a> tags vertically */
+  height: 32px;
+  width: 32px;
+  fill: #505050;
+  text-decoration: none!important;
+}
+
+.social-icons svg {
+  width: 36px; /* Set the width */
+  height: 36px; /* Set the height */
+  fill: #505050; /* Set the fill color */
+  stroke: transparent;
+  stroke-width: 0px;
+}
+
 /*
  * Navigation
  *
