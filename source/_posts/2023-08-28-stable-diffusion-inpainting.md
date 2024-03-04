@@ -7,10 +7,7 @@ title: Let’s Understand Stable Diffusion Inpainting
 
 In this article, we will explore the simplest approach to use Stable Diffusion for image inpainting. We all know, that the best way to grasp a concept is by implementing it. We will enhance the existing [StableDiffusionImg2ImgPipeline](https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_img2img.py#L101) from diffusers to solve inpainting tasks.
 
-<aside>
 👨🏻‍🎨 It is better to use either [StableDiffusionInpaintPipeline](https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_inpaint.py) or [StableDiffusionInpaintPipelineLegacy](https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_inpaint_legacy.py) from the 🤗 Diffusers library for your real-world tasks. These options are more comprehensive. The first one is specifically designed to work with SD models that have been fine-tuned for inpainting tasks.
-
-</aside>
 
 All the code, images and requirements can be found in my GitHub repository [diffusers-inpainting](https://github.com/Vadbeg/diffusers-inpainting).
 
@@ -103,19 +100,17 @@ Below you can find the result of this algorithm, generated with the model [redst
 
 ![Face of a yellow cat, high resolution, sitting on a park bench](/public/images/posts/2023-08-28-stable-diffusion-inpainting/inpainting.png)
 
-Face of a yellow cat, high resolution, sitting on a park bench
 
 Gif below shows denoising process for this image
 
-![Denoising process for inpainting algorithm](public/images/posts/2023-08-28-stable-diffusion-inpainting/inpainting_process.gif)
+![Denoising process for inpainting algorithm](/public/images/posts/2023-08-28-stable-diffusion-inpainting/inpainting_process.gif)
 
-Denoising process for inpainting algorithm
 
 This algorithm works and can give decent results. However, it performs poorly when we want to simply remove the object from the masked area. Let's compare the performance of runwayml/stable-diffusion-v1-5 using our pipeline with runwayml/stable-diffusion-inpainting using the [StableDiffusionInpaintPipeline](https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion/pipeline_stable_diffusion_inpaint.py). It's important to note that runwayml/stable-diffusion-inpainting was specifically trained for the inpainting task.
 
 To remove an object from the image, let's provide an empty prompt to the model. With an empty prompt, the model will attempt to make the masked area as consistent with the rest of the image as possible.
 
-![Comparison of simple and specifically trained pipelines](public/images/posts/2023-08-28-stable-diffusion-inpainting/test_inpainting_compare.png)
+![Comparison of simple and specifically trained pipelines](/public/images/posts/2023-08-28-stable-diffusion-inpainting/test_inpainting_compare.png)
 
 Comparison of simple and specifically trained pipelines
 
