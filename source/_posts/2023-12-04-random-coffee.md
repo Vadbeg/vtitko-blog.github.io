@@ -11,7 +11,7 @@ Random Coffees are quite similar. You meet with a stranger, perhaps through your
 
 And the best thing is, it's periodic—once a week, for example. This lets you meet a ton of new people and establish a wonderful habit.
 
-## **Why I Started Doing Random Coffees**
+## Why I Started Doing Random Coffees
 
 I began participating in Random Coffees four years ago when I was a Junior Machine Learning Engineer at a small company. I realized that to advance professionally, I needed to hone my listening and communication skills. And as they say, the best way to learn is by doing. Random Coffees became my method of choice. I signed up for the activity within a professional community.
 
@@ -24,7 +24,7 @@ I've met numerous fascinating individuals from various firms, including Google, 
 > Once, I talked to a person who, years earlier, had encouraged me in a chat to share my code with the world. He didn’t remember it, but for me, it was a significant moment.
 > 
 
-## **What I Learned**
+## What I Learned
 
 Naturally, I've picked up insights on some new technologies and ML papers, but that isn’t the heart of what I've gained. From these meetings, I've learned something far more important: how to engage in open communication with others, overcome shyness during first-time interactions, and keep conversations flowing even when topics seem scarce. These are skills you can't lean from books – they only come with practice.
 
@@ -35,7 +35,7 @@ Certainly, the first calls were challenging, especially when the person on the l
 > After one of those extremely hard calls, where the person couldn’t share even two words, I ended up exhausted and soaked in sweat. The lesson I learned from that conversation: sometimes it's best to end things early.
 > 
 
-## **How to Maximize the Benefits**
+## How to Maximize the Benefits
 
 But my greatest advise is: just show up. This way sooner or later you will became better at this ancient skill of communicating. 
 
