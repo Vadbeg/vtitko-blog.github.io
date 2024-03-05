@@ -8,14 +8,18 @@ number: 2  # Add this line to set the order of the page in the navigation (from 
 <div class="post">
     {% for post in site.posts %}
     <div class="post-thumbnail">
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <h1 class="post-thumbnail-title">
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-        </a>
-    </h1>
-  
+      <span class="post-thumbnail-date">{{ post.date | date_to_string }}</span>
+      <h1 class="post-thumbnail-title">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+      </h1>
+    
     </div>
     {% endfor %}
+
+    <div class="post-thumbnail">
+      subscribe <a href="/atom.xml">via RSS</a>
+    </div>
 </div>
   

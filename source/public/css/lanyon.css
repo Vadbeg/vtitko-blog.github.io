@@ -380,14 +380,23 @@ a.sidebar-nav-item:focus {
 }
 
 .post-thumbnail {
-  margin-bottom: 2em;
-  margin-top: 0.0em;
+  margin-bottom: 0em;
+  margin-top: 2em;
 }
 
 .post-thumbnail-title {
   color: #303030;
   margin-top: 0;
-  font-size: 32px;
+  font-size: 28px;
+}
+
+/* Meta data line below post title */
+.post-thumbnail-date {
+  display: block;
+  margin-top: 0.0rem;
+  margin-bottom: 0.0rem;
+  color: #9a9a9a;
+  font-size: 16px;
 }
 
 .post-thumbnail-title a {
@@ -403,13 +412,14 @@ a.sidebar-nav-item:focus {
 .page-title,
 .post-title {
   margin-top: 0;
+  margin-bottom: 0.0rem;
 }
 
 /* Meta data line below post title */
 .post-date {
   display: block;
-  margin-top: 0.0rem;
-  margin-bottom: 0.0rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.8rem;
   color: #9a9a9a;
 }
 
