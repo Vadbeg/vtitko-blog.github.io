@@ -41,7 +41,7 @@ And remember, you don’t need to be a genius to solve those tasks. You need pat
 
 Those topics are really broad and everybody expects different things from those specialists. Some companies need to build matching systems, some LLM-powered tools, and some analytical dashboards. Therefore, it's crucial to adapt according to the job description. But, there is general knowledge which you should know for most interviews.
 
-I think Chip Huyen did an amazing job writing the [Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/). To prepare for the interview, I recommend reading this book and solving tasks in which you are not proficient. For example, I forgot probability theory at university. Working through tasks from this book, along with a few additional ones from the internet, allowed me to refresh my knowledge.
+I think Chip Huyen did an amazing job writing the [Machine Learning Interviews Book](https://huyenchip.com/ml-interviews-book/). To prepare for the interview, I recommend reading this book and solving tasks in which you are not proficient. For example, I forgot probability theory. Working through tasks from this book, along with a few additional ones from the internet, allowed me to refresh my knowledge.
 
 Also, going through the list of popular questions is helpful too, for example, [Data-Science-Interview-Questions-Answers](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/tree/main).
 
