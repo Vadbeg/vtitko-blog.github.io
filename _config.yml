@@ -1,8 +1,8 @@
-title: 'Vadim Titko'
+title: 'Vadzim Tsitko'
 tagline: ''
 permalink: pretty
 
-description: "Vadim Titko's blog about Engineering, Machine Learning and Stuff"
+description: "Vadzim Tsitko's blog about Engineering, Machine Learning and Stuff"
 
 plugins:
   - jekyll-feed
