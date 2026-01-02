@@ -29,6 +29,49 @@
 
 
 /*
+ * CSS Custom Properties for Dark Mode
+ */
+
+:root {
+  --bg-primary: #fff;
+  --text-primary: #3a3a3a;
+  --text-headings: #313131;
+  --text-subtle: #505050;
+  --text-muted: #c0c0c0;
+  --text-strong: #303030;
+  --text-quote: #7a7a7a;
+  --text-abbr: #555;
+  --link-color: #268bd2;
+  --border-color: #eee;
+  --code-bg: #f9f9f9;
+  --code-text: #bf616a;
+  --table-border: #e5e5e5;
+  --table-row-odd: #f9f9f9;
+  --hr-border-top: #eee;
+  --hr-border-bottom: #fff;
+}
+
+.dark-mode {
+  --bg-primary: #1a1a1a;
+  --text-primary: #e4e4e4;
+  --text-headings: #f0f0f0;
+  --text-subtle: #a0a0a0;
+  --text-muted: #6a6a6a;
+  --text-strong: #e8e8e8;
+  --text-quote: #b0b0b0;
+  --text-abbr: #a8a8a8;
+  --link-color: #58a6ff;
+  --border-color: #2d2d2d;
+  --code-bg: #2d2d2d;
+  --code-text: #ff7b72;
+  --table-border: #3a3a3a;
+  --table-row-odd: #2a2a2a;
+  --hr-border-top: #3a3a3a;
+  --hr-border-bottom: #2a2a2a;
+}
+
+
+/*
  * Global resets
  *
  * Update the foundational and global aspects of the page.
@@ -48,7 +91,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #313131;
+  color: var(--text-headings);
   letter-spacing: -.025rem;
 }
 
@@ -100,24 +143,25 @@ h1, h2, h3, h4, h5, h6 {
   padding-top:    0rem;
   padding-bottom: 0rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color);
 }
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
+  color: var(--text-subtle);
   display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space items evenly */
+  justify-content: flex-start; /* Changed from space-between */
   align-items: baseline; /* Center items vertically */
   vertical-align: middle;
+  gap: 0; /* Remove gaps between flex items */
 }
 .masthead-title a {
-  color: #505050;
+  color: var(--text-subtle);
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #c0c0c0;
+  color: var(--text-muted);
   letter-spacing: 0;
 }
 
@@ -140,14 +184,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color);
 }
 
 .mastfoot-content {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  color: #505050;
+  color: var(--text-subtle);
 }
 
 .social-icons {
@@ -159,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; /* Remove any default padding */
   margin: 0.3rem; /* Remove any default margin */
   font-size: 36px; /* Set the font size */
-  color: #505050; /* Set the color */
+  color: var(--text-subtle); /* Set the color */
   text-decoration: none!important;
 }
 
@@ -167,14 +211,14 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle; /* Align all <a> tags vertically */
   height: 32px;
   width: 32px;
-  fill: #505050;
+  fill: var(--text-subtle);
   text-decoration: none!important;
 }
 
 .social-icons svg {
   width: 36px; /* Set the width */
   height: 36px; /* Set the height */
-  fill: #505050; /* Set the fill color */
+  fill: var(--text-subtle); /* Set the fill color */
   stroke: transparent;
   stroke-width: 0px;
 }
@@ -187,12 +231,99 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .site-nav {
-  float: right; /* Align the right side of the nav to the right */
+  float: none; /* Remove float */
+  margin-left: auto; /* Push to right side */
 }
 
 .site-nav a {
-  color: #505050;
+  color: var(--text-subtle);
   margin-left: 15px;
+}
+
+
+/*
+ * Dark Mode Toggle
+ */
+
+.dark-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  user-select: none;
+  align-self: center;
+}
+
+.dark-mode-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.dark-mode-toggle .slider {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 50px;
+  height: 24px;
+  background-color: var(--border-color);
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  padding: 2px;
+}
+
+.dark-mode-toggle input:checked + .slider {
+  background-color: #4a5568;
+}
+
+.dark-mode-toggle .slider::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  left: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dark-mode-toggle input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.dark-mode-toggle .sun-icon,
+.dark-mode-toggle .moon-icon {
+  position: absolute;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dark-mode-toggle .sun-icon {
+  left: 5px;
+  color: #f59e0b;
+  opacity: 1;
+}
+
+.dark-mode-toggle .moon-icon {
+  right: 5px;
+  color: #fbbf24;
+  opacity: 0;
+}
+
+.dark-mode-toggle input:checked + .slider .sun-icon {
+  opacity: 0;
+}
+
+.dark-mode-toggle input:checked + .slider .moon-icon {
+  opacity: 1;
+}
+
+@media (max-width: 48em) {
+  .dark-mode-toggle {
+    margin-left: 0.5rem;
+  }
 }
 
 
@@ -386,7 +517,7 @@ a.sidebar-nav-item:focus {
 }
 
 .post-thumbnail-title {
-  color: #303030;
+  color: var(--text-headings);
   margin-top: 0;
   font-size: 28px;
 }
@@ -401,14 +532,14 @@ a.sidebar-nav-item:focus {
 }
 
 .post-thumbnail-title a {
-  color: #303030;
+  color: var(--text-headings);
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: var(--text-headings);
 }
 .page-title,
 .post-title {

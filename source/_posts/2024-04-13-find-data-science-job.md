@@ -11,11 +11,11 @@ In this article, I will tell you about how I found a new job, how I prepared for
 - I have a bachelor's degree in Computer Science.
 - I was looking for a job in Europe because I am living there.
 
-# **Preparation**
+# Preparation
 
 In this part, I will tell you how I prepared for the interviews. Some parts could be relevant to any Software Engineering position, while other apply only to Data Scientists or Machine Learning Engineers. You can skip the parts you are not interested in.
 
-## **Coding**
+## Coding
 
 Because my main focus was big tech companies, it made sense to improve my LeetCode skills. In university, I took multiple algorithms courses, read a couple of books on algorithms and completed one or two online courses. So, I was not a novice at all. But still, knowing general algorithms and solving LeetCode tasks in 20 minutes are quite different tasks.
 
@@ -37,7 +37,7 @@ If some topic is not understandable to you, I recommend spending a couple of hou
 
 And remember, you don’t need to be a genius to solve those tasks. You need patience, time, and consistency. I still can’t solve some of the medium tasks, and I skip hard tasks altogether. Don’t be hard on yourself, just stick to it, and you will succeed.
 
-## **Data Science and Machine Learning**
+## Data Science and Machine Learning
 
 Those topics are really broad and everybody expects different things from those specialists. Some companies need to build matching systems, some LLM-powered tools, and some analytical dashboards. Therefore, it's crucial to adapt according to the job description. But, there is general knowledge which you should know for most interviews.
 
@@ -45,7 +45,7 @@ I think Chip Huyen did an amazing job writing the [Machine Learning Interviews 
 
 Also, going through the list of popular questions is helpful too, for example, [Data-Science-Interview-Questions-Answers](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/tree/main).
 
-## **Machine Learning System Design**
+## Machine Learning System Design
 
 This topic is growing rapidly. But I still have some resources that I love.
 
@@ -60,11 +60,11 @@ I also loved this [article](https://towardsdatascience.com/how-to-answer-any-ma
 
 Generally, reading articles and being curious about the field pays off in this interview.
 
-## **Mock Interviews**
+## Mock Interviews
 
 These are crucial. You can test your interviewing abilities in a controlled environment. There are services for which you can pay, but I recommend using the help of your friends or reaching out to people on LinkedIn and asking them for help. You will be surprised how many people are willing to help you for free. They gain experience from it too!
 
-## **Resume**
+## Resume
 
 There is an infinite amount of information on this topic. My general recommendations are:
 
@@ -74,7 +74,7 @@ There is an infinite amount of information on this topic. My general recommendat
 - Sort blocks by importance, from top to bottom.
 - Add not only technical but also business information. For example, "By building X, I improved retention by Y."
 
-# **Interviews**
+# Interviews
 
 The interviewing process sucks. It is not the best proxy for your job performance, but it is the main one we use. I think there is a lot of information on how to prepare for interviews mentally.
 
@@ -90,11 +90,11 @@ Third, apply to the companies using a referral system. For example, via an acqua
 
 Fourth, don’t freak out about rejections. You can reapply after half a year in most cases. And then you will be much more experienced and prepared.
 
-## **Duration**
+## Duration
 
 Searching for a job takes time. I think you should expect the process to take 3 to 6 months, from the application to the first day in the company. Typically, with smaller companies or startups, it takes less time, while with big tech companies, the process is longer.
 
-## **Questions**
+## Questions
 
 Do not be afraid to ask questions. If anything, it will make things better, not worse.
 
@@ -106,7 +106,7 @@ And finally, at the end of each interview, you will be able to ask your question
 
 Overall, questions are extremely important. And sometimes asking the right questions will make a lot of impact.
 
-## **My Latest Experience**
+## My Latest Experience
 
 Below, you can see the table I used to track my interviewing progress with all the companies in 2024. Looks scary, doesn’t it? Most of those are rejections or ignoring of my applications. If you like the table, you can duplicate it from [here](https://www.notion.so/7f482df8d44e47c78205227f4c21d74f?pvs=21).
 
@@ -128,7 +128,7 @@ In the table below, you can find the absolute numbers if you are interested.
 
 Luckily, I got an offer from the company I wanted to work for — [Revolut](https://www.revolut.com/careers/). I visited their meet-ups and used their application daily. A colleague from one of my previous jobs works there, so he referred me for the position I wanted. And I was able to pass all the interviews and got the role! But without all the preparation, I wouldn’t have been able to do this.
 
-# **Conclusion**
+# Conclusion
 
 For the most part, finding a job is a numbers game. But, using an analytical approach, you will maximize your chances of getting offers from the companies you want to work for.
 

@@ -3,9 +3,7 @@ layout: post
 title: How to Deploy Neural Networks on iOS
 ---
 
-<p class="message">
 You can find the slides for this article <a href="https://docs.google.com/presentation/d/1bj8QCb9MZ7q9F0o6Dwp26qdgDTfCfxHc0yUfJ2_w4e4/edit?usp=sharing">here</a>
-</p>
 
 ![thumbnail](/public/images/posts/2023-02-05-how-to-deploy-nns-on-ios/thumbnail.png)
 
