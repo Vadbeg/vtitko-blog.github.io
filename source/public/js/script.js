@@ -17,13 +17,6 @@
 // Dark Mode Toggle
 (function(document) {
   const darkModeToggle = document.querySelector('#dark-mode-checkbox');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const darkMode = localStorage.getItem('darkMode');
-
-  // Set initial checkbox state
-  if (darkMode === 'enabled' || (darkMode === null && prefersDark)) {
-    darkModeToggle.checked = true;
-  }
 
   // Toggle dark mode on checkbox change
   darkModeToggle.addEventListener('change', function() {

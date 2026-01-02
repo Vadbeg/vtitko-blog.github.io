@@ -25,6 +25,10 @@
                 <i class="fa fa-moon-o moon-icon"></i>
               </span>
             </label>
+            <script>
+              // Set checkbox state immediately to prevent flash
+              document.getElementById('dark-mode-checkbox').checked = window.__darkModeEnabled || false;
+            </script>
 
           </div>
 

@@ -5,8 +5,11 @@
       const darkMode = localStorage.getItem('darkMode');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+      // Store the initial state globally so checkbox can be set immediately
+      window.__darkModeEnabled = darkMode === 'enabled' || (darkMode === null && prefersDark);
+
       // Apply dark mode if: explicitly enabled OR (not set AND system prefers dark)
-      if (darkMode === 'enabled' || (darkMode === null && prefersDark)) {
+      if (window.__darkModeEnabled) {
         document.documentElement.classList.add('dark-mode');
       }
     })();
