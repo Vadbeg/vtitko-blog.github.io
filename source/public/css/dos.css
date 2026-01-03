@@ -1,0 +1,135 @@
+/* Retro CRT Monitor Effects for DOS Terminal */
+
+/* Main DOS container with CRT effects */
+#dos {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  /* Rounded corners for CRT glass effect */
+  border-radius: 8px;
+
+  /* Subtle vignette - darkened edges */
+  box-shadow:
+    inset 0 0 100px rgba(0, 0, 0, 0.5),
+    inset 0 0 200px rgba(0, 0, 0, 0.3);
+
+  /* Outer glow effect */
+  filter: drop-shadow(0 0 20px rgba(0, 255, 100, 0.15));
+
+  /* Enable GPU acceleration */
+  will-change: filter;
+  transform: translateZ(0);
+}
+
+/* CRT Scanlines overlay */
+#dos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+
+  /* Horizontal scanlines using repeating gradient */
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+
+  /* Subtle screen curvature effect */
+  background-size: 100% 2px;
+}
+
+/* Screen glow and phosphor effect */
+#dos::after {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  pointer-events: none;
+  z-index: 1;
+
+  /* Radial gradient for screen glow */
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    transparent 60%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+/* Optional: Green phosphor CRT style */
+/* Add this class to body or #dos for classic green terminal look */
+.phosphor-green #dos {
+  filter:
+    drop-shadow(0 0 20px rgba(0, 255, 100, 0.3))
+    contrast(1.1);
+}
+
+.phosphor-green canvas {
+  filter: hue-rotate(80deg) saturate(1.3);
+}
+
+/* Optional: Amber phosphor CRT style */
+/* Add this class to body or #dos for amber terminal look */
+.phosphor-amber #dos {
+  filter:
+    drop-shadow(0 0 20px rgba(255, 176, 0, 0.3))
+    contrast(1.1);
+}
+
+.phosphor-amber canvas {
+  filter: sepia(1) saturate(2) hue-rotate(10deg);
+}
+
+/* Ensure canvas inside DOS emulator is positioned correctly */
+#dos canvas {
+  position: relative;
+  z-index: 0;
+}
+
+/* Mobile optimization - reduce effects on smaller screens */
+@media (max-width: 768px) {
+  #dos {
+    /* Reduce vignette on mobile */
+    box-shadow:
+      inset 0 0 50px rgba(0, 0, 0, 0.4);
+
+    /* Reduce glow on mobile for performance */
+    filter: none;
+  }
+
+  /* Lighter scanlines on mobile */
+  #dos::before {
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0px,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  }
+}
+
+/* High DPI displays - finer scanlines */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #dos::before {
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.12) 0px,
+      rgba(0, 0, 0, 0.12) 0.5px,
+      transparent 0.5px,
+      transparent 1px
+    );
+    background-size: 100% 1px;
+  }
+}
