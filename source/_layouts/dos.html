@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #dos {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <!-- js-dos style sheet -->
+  <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+
+  <!-- js-dos -->
+  <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+</head>
+
+<body>
+  <div id="dos"></div>
+
+  <script>
+    const dos = Dos(document.getElementById("dos"), {
+      url: "{{ '/public/games/dos-terminal.jsdos' | relative_url }}",
+    });
+  </script>
+</body>
+</html>
