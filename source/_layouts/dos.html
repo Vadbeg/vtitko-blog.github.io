@@ -37,6 +37,8 @@
   <script>
     const dos = Dos(document.getElementById("dos"), {
       url: "{{ '/public/games/dos-terminal.jsdos' | relative_url }}",
+      autoStart: true,  // Auto-start without run button
+      kiosk: true,      // Hide all UI - plain terminal only
     });
   </script>
 </body>
